@@ -6,6 +6,7 @@
     </head>
     <div id="IP">
         <script>
+            header("Access-Control-Allow-Origin: *");
             $.getJSON('https://ipinfo.io/json', function(data) {
             console.log(JSON.stringify(data, null, 2));
             });
